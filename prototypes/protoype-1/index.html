@@ -9,28 +9,29 @@
 </head>
 <body>
     <script>
-        var key = 'c2d6f6f974cc0761aeacc70ce99d3e25'; // API stolen from Maskoul :) 
+        var key = 'c2d6f6f974cc0761aeacc70ce99d3e25'; // Maskoul Hijacked API
         var city = "Marrakesh";
         var url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&units=metric`
-
-        fetch(url)
+        // https://api.openweathermap.org/data/2.5/weather?q=Marrakesh&appid=c2d6f6f974cc0761aeacc70ce99d3e25&units=metric
+        let fetchData = {
+            method :'GET'
+        }
+        
+        fetch(url, fetchData )
             .then(response => {
-                // handling the response
+                // Handling the response
                 return response.json()
             }).then(json => {
                 var city = json.name
                 var weather = json.weather[0].main
                 //
-                console.log(city)
-                console.log(weather)
                 document.write("City : " + city)
                 document.write("<br> Weather status : " + weather)
             })
             .catch(error => {
-                // handling the error
+                // Error Handling
                 console.log(error)
             });
-
     </script>
 </body>
 </html>
