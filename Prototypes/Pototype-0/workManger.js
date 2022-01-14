@@ -14,10 +14,7 @@ class WorkManager {
     
 
 
-    getAllItems() {
-        return this.#workList.sort(function(a, b) {
-            return a.title.localeCompare(b.title)
-        })
-    
+    get workList() {
+        return this.#workList
     }
 }
