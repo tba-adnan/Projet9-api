@@ -31,7 +31,7 @@ function readwork() {
 
 
 function insertNewRow() {
-    var workList = workManager.getAllItems()
+    var workList = workManager.workList
     var tableBody = document.getElementById("worksTable").getElementsByTagName('tbody')[0];
 
     while (tableBody.rows.length > 0) {
