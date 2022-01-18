@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+</head>
+
+<body>
+    <script>
+        var key = 'c2d6f6f974cc0761aeacc70ce99d3e25'; 
+        var city = "Marrakesh";
+        var url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}`
+        // http://api.openweathermap.org/data/2.5/weather?q=Marrakesh&appid=c2d6f6f974cc0761aeacc70ce99d3e25
+
+        fetch(url)
+            .then(response => {
+                return response.json()
+            }).then(json => {
+                var city = json.name
+                var weather = json.weather[0].main
+                document.write("<h3> City : " + city + "</h3>")
+                document.write("Status : " + weather)
+            })
+            .catch(error => {
+                console.log(error)
+            });
+
+    </script>
+</body>
+
+</html> 
