@@ -5,30 +5,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>My Weather</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
+    <title>Weather app</title>
 </head>
 
-<body>
+<div id="search">
     <div>
-        <input id="cityInput" type="text" placeholder="City Name">
-        <button onclick="onSearch()">Search</button>
+         <input id="cityInput" type="text" placeholder="City Name">
+    <button onclick="onSearch()">Search</button>
     </div>
-    <div class="current_weather">
-        <div>
-            <p>Tanger</p>
-            <p>15:36</p>
-        </div>
-        <div>
-            <p>
-                18°
-            </p>
-            <p>
-                
-            </p>
+   
+</div>
+
+
+
+
+<div class="container-fluid px-1 px-md-4 py-5 mx-auto">
+    <div class="row d-flex justify-content-center px-3">
+        <div class="card">
+            <h2 class="ml-auto mr-4 mt-3 mb-0" id="citylights"></h2>
+            <p class="ml-auto mr-4 mb-0 med-font" id="descritpion"></p>
+            <h1 class="ml-auto mr-4 large-font" id="temperture">No Data</h1>
         </div>
     </div>
-</body>
+</div>
+
+
 <script src="weather.js"></script>
 <script src="weatherManager.js"></script>
 <script src="main.js"></script>
