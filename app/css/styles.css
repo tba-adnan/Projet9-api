@@ -3,13 +3,13 @@ body {
     overflow-x: hidden;
     height: 100%;
     background-color: #CFD8DC;
-    background-image: url("/img/nightsky.jpg");
-    background-size: 1300px;
-    
+    background-image: url("https://images.unsplash.com/photo-1582641857491-7e9987c2e415?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-size: 1600px;
+    /* https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg */
 }
 
 .card {
-    background-image: url("https://i.imgur.com/dpqZJV5.jpg");
+    background-image: url("");
     background-size: cover;
     width: 600px;
     height: 350px;

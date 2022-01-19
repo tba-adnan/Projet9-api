@@ -9,3 +9,17 @@
     justify-content: center;
     
 }
+
+
+.search {
+    border-radius: 18px;
+    border:none;
+    padding: 15px;
+}
+
+.button {
+    border: none;
+    color: black;
+    border-radius: 12px;
+    padding: 5px;
+}
